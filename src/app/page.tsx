@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="w-screen flex flex-col items-center h-screen bg-white overflow-hidden relative">
       <div className="mt-20">
-        <img src="/logodkm.jpg" className="w-20 h-20 rounded-full" alt="" />
+        <img src="/logo.png" className="w-40 h-2w-40 rounded-md" alt="" />
       </div>
 
       <div className="mt-10 z-10 flex flex-col items-center">
@@ -15,18 +15,21 @@ export default function Home() {
       </div>
 
       <div className="w-full z-10 p-16 gap-4 flex lg:items-center flex-col">
-        <Card className="flex justify-start border-yellow-400  hover:bg-yellow-100 cursor-pointer gap-4 w-full lg:w-1/4 p-4 items-center">
+        <Card 
+          onClick={() => window.open("https://drive.google.com/drive/folders/1UIH_pm_o8WGmT5Tw7Bi3i0W79JNQHGJF?usp=sharing", "_blank")} 
+          className="flex justify-start border-yellow-400  hover:bg-yellow-100 cursor-pointer gap-4 w-full lg:w-1/4 p-4 items-center"
+        >
           <div className="w-2 h-2 bg-yellow-400 hover:bg-white rounded-full"></div>
 
           <h1>Drive de atividades</h1>
         </Card>
 
-        <Card className="flex justify-start hover:bg-green-200 border-green-400 cursor-pointer gap-4 w-full lg:w-1/4 p-4 items-center">
+        <Card onClick={() => window.open("http://api.whatsapp.com/send?phone=5562999690460", "_blank")} className="flex justify-start hover:bg-green-200 border-green-400 cursor-pointer gap-4 w-full lg:w-1/4 p-4 items-center">
           <div className="w-2 h-2 bg-green-400 rounded-full"></div>
 
           <h1>Entrar em contato</h1>
 
-          <img src="/whatsapp-svg.svg"className="w-4 text-green-400" color="#00770c"/>
+          <img src="/whatsapp-svg.svg" className="w-4 text-green-400" color="#00770c" />
         </Card>
       </div>
 
